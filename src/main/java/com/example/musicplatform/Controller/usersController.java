@@ -18,14 +18,8 @@ import java.util.List;
 public class usersController {
     @Autowired
     private UsersService usersService;
-
-//
-
-
     @GetMapping("/{user_account}")
     public List<users> getUsersById(@PathVariable Integer user_account){
-
-        List<users> users=usersService.getById(user_account);
-        return users;
+        return usersService.getById(user_account);
     }
 }

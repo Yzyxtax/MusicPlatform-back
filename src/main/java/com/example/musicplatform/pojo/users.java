@@ -23,8 +23,6 @@ public class users {
     private String gender;
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate birth_date;
-
     private boolean is_certified_singer; // 使用 Integer 或确保数据库为 tinyint(1)
-
     private boolean is_member;
 }

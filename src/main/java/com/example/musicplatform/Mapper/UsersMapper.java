@@ -12,7 +12,7 @@ import java.util.List;
 public interface UsersMapper {
 
 
-    @Select("select password,nickname from users where user_account=1")
+    @Select("select * from users where user_account=1")
     List<users> getById(Integer user_account);
 
 }
