@@ -22,5 +22,23 @@ public class UsersServiceImpI implements UsersService {
         return usersMapper.getById(user_account);
     }
 
+    @Override
+    public int insertUsers(users users) {
+        return usersMapper.insertUser(users);
+    }
 
+    @Override
+    public int updateUsers(users users) {
+        return usersMapper.updateUsers(users);
+    }
+
+    @Override
+    public int deleteUsers(Integer user_account) {
+        return usersMapper.deleteUser(user_account);
+    }
+
+    @Override
+    public Integer validateLogin(String phone_number, String password) {
+        return usersMapper.validateLogin(phone_number, password);
+    }
 }

@@ -1,0 +1,13 @@
+package com.example.musicplatform.pojo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class LoginRequest {
+    private String phone_number;
+    private String password;
+}

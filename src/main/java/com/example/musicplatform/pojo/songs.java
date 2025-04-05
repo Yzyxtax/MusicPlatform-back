@@ -15,8 +15,8 @@ public class songs {
     private String lyrics;//歌词
     private String duration;//时长
     private String genre;//流派
-    private Boolean requires_membership;
-    private Double song_price;
-    private Boolean requires_cover;
-    private Integer plays_number;
+    private Boolean requires_membership;//是否要会员
+    private Double song_price;//价格
+    private Boolean requires_cover;//是否是翻唱
+    private Integer plays_number;//播放次数
 }
